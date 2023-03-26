@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="IQBAL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-07 08.49.06 PM"/>
+        <attribute name="created" value="SVFCQUw7REVTS1RPUC1EQTUxRUVMOzIwMjMtMDMtMDc7MDguMzUuNTIgUE07MjY1Mw=="/>
+        <attribute name="edited" value="SVFCQUw7REVTS1RPUC1EQTUxRUVMOzIwMjMtMDMtMDc7MDguNDkuMDYgUE07MTsyNzY1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="bil1, bil2, bil3, max" type="Integer" array="False" size=""/>
+            <input variable="bil1"/>
+            <input variable="bil2"/>
+            <input variable="bil3"/>
+            <if expression="bil1&gt;bil2">
+                <then>
+                    <if expression="bil1&gt;bil3">
+                        <then>
+                            <assign variable="max" expression="bil1"/>
+                        </then>
+                        <else/>
+                    </if>
+                </then>
+                <else>
+                    <if expression="bil2&gt;bil3">
+                        <then>
+                            <assign variable="max" expression="bil2"/>
+                        </then>
+                        <else>
+                            <assign variable="max" expression="bil3"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;bilangan max adalah &quot; &amp; max" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
